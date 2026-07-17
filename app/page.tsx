@@ -4,18 +4,33 @@ import CartaoPerfil from './../components/CartaoPerfil';
 import Soma from '@/components/Soma';
 import VariavelNome from '@/components/VariavelNome'
 import NomeCurso from './../components/NomeCurso';
-import page from '@/components/'
+import CartaoPerfeil1 from "./../components/CartaoPerfil1";
+import ImgAluno from '@/components/ImgAluno';
+import Header from "@/components/Header";
+import Contador from '@/components/Contador';
+import SecaoTurma from '@/components/SecaoTurma';
 
 
 export default function home() {
   return (
-    <div  >
-      <Titulo />
+    <div>
+      <Titulo/>
       <div>
-        <CartaoPerfil />
-        <CartaoPerfil />
-        <CartaoPerfil />
+        <Header/>
         <div>
+        <ImgAluno />
+        </div>
+        <CartaoPerfeil1/>
+        <CartaoPerfil />
+        <CartaoPerfil />
+        <Contador />
+        <SecaoTurma/>
+        <div>
+          <>
+
+              <h3 className="text-xl font-bold text-amber-50">Daniel Guimares</h3>
+                  <p className="text-fuchsia-600">Back-end</p>
+            </>
         </div>      
       </div>
       <VariavelNome />
@@ -31,6 +46,7 @@ export default function home() {
 
 // import Image from "next/image";//
 // import { TemplateString } from 'next/dist/lib/metadata/types/metadata-types';
+
 // export default function Home() {
 //   return (
 //     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
